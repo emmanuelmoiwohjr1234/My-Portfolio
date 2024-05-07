@@ -1,0 +1,595 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/*--------------------header---------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+   background-color: #FFFFFF;
+   padding: 20px 100px ;
+   align-items: center;
+}
+header h2{
+    font-size: 35px;
+    cursor: pointer;
+}
+span{
+    color: rgb(255,107,0);
+}
+button{
+    padding: 15px 45px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 20px;
+    border: none;
+    background-color:rgb(255,107,0) ;
+    cursor: pointer;
+}
+/*--------------------nav links---------------*/
+nav{
+    display: flex;
+    padding: 0;
+}
+nav a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 40px 20px;
+    color: black;
+}
+nav a::after{
+    content:'';
+    background-color: rgb(255,107,0);
+    height: 2px;
+    width:0;
+    display: block;
+    transition: 0.2s;
+}
+nav a:hover:after{
+    width: 100%;
+}
+ 
+/*----------------------------------------------------------------Hero Section--------------------------------------------*/
+
+.hero-section{
+    background-color: #FFF3EA;
+    padding: 10px 100px;
+    height: 95vh;
+    padding-top: 120px;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    grid-gap: 2em;
+    position: relative;
+}
+.hero-col h1{
+    font-size: 50px;
+    margin-top: 20px;
+    width: 700px;
+}
+.hero-col p{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 600px;
+}
+.hero-col img{
+   width: 100%;
+}
+/*--------------Hero icons----------------*/
+.hero-icon-div{
+    margin-top: 70px;
+}
+.fa-brands{
+    color: #FF6B00;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/*--------------------icons that are on the hero section  picture--------------*/
+.award{
+    position: absolute;
+    top: 140px;
+    right: 0;
+    border-radius: 50px;
+
+}
+.diamond{
+    position: absolute;
+    right: 350px;
+    top: 300px;
+    border-radius: 50px;
+}
+.color{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    border-radius: 50px;
+}
+/*--------------------------------------------About Me section--------------------------------------*/
+
+.about-me{
+    padding: 100px 100px;
+}
+.about-me-parent{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 5em;
+}
+.about-me-parent img{
+    width: 100%;
+    background-color: #FFF3EA;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+}
+.about-col h2{
+    font-size: 30px;
+}
+.about-col p,ol li{
+    width: 500px;
+    margin: 20px;
+    font-size: 18px;
+}
+
+/*-------------------------------------------------My Services-----------------------------------------------*/
+
+.my-services{
+    padding: 50px 100px 100px;
+    background-color: #FFF3EA;
+}
+
+.my-services h2{
+    text-align: center;
+    font-size: 30px;
+}
+.my-services-parent-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    padding-top: 50px;
+}
+.box-col{
+    border: 1px solid #FF6B00;
+    line-height: 30px;
+    padding: 30px 20px 60px ;
+    border-radius: 10px;
+}
+.box-col h3{
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+
+/*--------------------------------------------My Portfolio----------------------------------------*/
+
+.Portfolio-section{
+    padding: 0px 100px 100px;
+   
+}
+.Portfolio-section h2{
+    text-align: center;
+    font-size: 30px;
+}
+.Portfolio-section p{
+    text-align: center;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.Portfolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.Portfolio-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------------------Contact Me---------------------------------------*/
+
+.contact{
+    padding: 0px 100px 100px;
+}
+.contact-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-col h3{
+    font-size: 50px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.contact-box div{
+    margin: 30px 20px 0 20px ;
+    line-height: 30px;
+    font-size: 20px;
+}
+.fa-solid{
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: #FFF3EA;
+    color: #FF6B00;
+}
+/*---------------------------input----------------*/
+.contact-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+input,select{
+    padding: 20px 30px 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #FF6B00;
+}
+textarea {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-bottom: 13px;
+    padding: 10px 10px ;
+    border-radius: 10px;
+    border: 1px solid #FF6B00;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
