@@ -5,10 +5,17 @@
     list-style: none;
     text-decoration: none;
 }
-/*--------------------header---------------*/
-body{
-    overflow-x: hidden;
+/*scroollbar---------*/
+::-webkit-scrollbar{
+    width: 10px;
+    background:#FFFFFF;
 }
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(255,107,0),rgba(255, 106, 0, 0.082));
+    border-radius: 10px;
+}
+/*--------------------header---------------*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -63,7 +70,10 @@ nav a:hover:after{
     padding: 10px 100px;
     height: 95vh;
     padding-top: 120px;
+    position: relative;
+    
 }
+
 article{
     display: grid;
     grid-template-columns: 1fr 30%;
@@ -83,6 +93,27 @@ article{
 }
 .hero-col img{
    width: 100%;
+}
+/*--------------------curvy shape of the section---------------*/
+.custom-shape-divider-bottom-1715262562 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1715262562 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1715262562 .shape-fill {
+    fill: #FFFFFF;
 }
 /*--------------Hero icons----------------*/
 .hero-icon-div{
@@ -117,7 +148,9 @@ article{
 /*--------------------------------------------About Me section--------------------------------------*/
 
 .about-me{
-    padding: 100px 100px;
+    padding: 50px 100px;
+    padding-bottom: 100px;
+    position: relative;
 }
 .about-me-parent{
     display: grid;
@@ -139,6 +172,77 @@ article{
     margin: 20px;
     font-size: 18px;
 }
+
+/*--------------------curvy shape of this section for bottom in About Me---------------*/
+.custom-shape-divider-bottom-1715263717 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715263717 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 95px;
+}
+
+.custom-shape-divider-bottom-1715263717 .shape-fill {
+    fill: #FF6B00;
+}
+/*-------------------------------------------------INDEX.ABOUT ME PAGE FOR  CSS-------------------------------------*/
+.about-header{
+    background-color: #FF6B00;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: #FFFFFF;
+}
+.links a{
+    color: #FFFFFF;
+}
+.links a::after{
+    content:'';
+    background-color:  #FFF3EA;
+    height: 2px;
+    width:0;
+    display: block;
+    transition: 0.2s;
+}
+.links a:hover:after{
+    width: 100%;
+}
+.exprience{
+    padding: 100px 100px;
+    position: relative;
+    background-color: #FFF3EA;
+}
+/*--------------------curvy shape of the sectiois with in the INDEX.ABOUT ME PAGE FOR  CSS----------------*/
+.custom-shape-divider-bottom-1715270129 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715270129 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 149px;
+
+}
+
+.custom-shape-divider-bottom-1715270129 .shape-fill {
+    fill: #FFFFFF;
+}
+
 
 /*-------------------------------------------------My Services-----------------------------------------------*/
 
@@ -224,7 +328,9 @@ article{
 /*---------------------------------------------Contact Me---------------------------------------*/
 
 .contact{
-    padding: 0px 100px 100px;
+    padding: 100px 100px 100px;
+    background-color: #FFF3EA;
+    position: relative;
 }
 .contact-parent{
     display: grid;
@@ -278,11 +384,33 @@ textarea {
     border: 1px solid #FF6B00;
 
 }
+/*--------------------curvy shape of the section---------------*/
+.custom-shape-divider-bottom-1715271136 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1715271136 svg {
+    position: relative;
+    display: block;
+    width: calc(290% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1715271136 .shape-fill {
+    fill: #FFFFFF;
+}
 /*------------------------------------footer--------------------------------*/
 .footer{
     padding: 70px 100px 100px;
     background-color: #101010;
     color: white;
+    position: relative;
 }
 .footer-parent{
     display: grid;
@@ -330,6 +458,27 @@ div .fa-paper-plane{
 }
 .footer-col h3{
     font-size: 50px;
+}
+/*--------------------curvy shape of the section---------------*/
+.custom-shape-divider-top-1715265621 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1715265621 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-top-1715265621 .shape-fill {
+    fill: #FFFFFF;
 }
 
 
