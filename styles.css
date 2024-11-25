@@ -95,16 +95,16 @@ article{
    width: 100%;
 }
 /*--------------------curvy shape of the section---------------*/
-.custom-shape-divider-bottom-1715262562 {
+/* .custom-shape-divider-bottom-1715262562 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
+} */
 
-.custom-shape-divider-bottom-1715262562 svg {
+/* .custom-shape-divider-bottom-1715262562 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -114,7 +114,7 @@ article{
 
 .custom-shape-divider-bottom-1715262562 .shape-fill {
     fill: #FFFFFF;
-}
+} */
 /*--------------Hero icons----------------*/
 .hero-icon-div{
     margin-top: 70px;
@@ -489,7 +489,131 @@ div .fa-paper-plane{
 
 
 
+/* Tablet and smaller desktop screens */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        padding: 10px;
+    }
+    
+    article, .about-me-parent {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-col h1, .hero-col p {
+        width: 100%;
+    }
+    
+    .about-col p, .about-col ol li {
+        width: 100%;
+    }
+}
 
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    header h2 {
+        font-size: 28px;
+    }
+    
+    .hero-col h1 {
+        font-size: 28px;
+    }
+    
+    button {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+    
+    .hero-section {
+        padding: 20px;
+        height: auto;
+    }
+}/* Large screens */
+@media screen and (max-width: 1200px) {
+    .hero-section, .about-me, .my-services, .Portfolio-section, .contact {
+        padding: 40px 50px;
+    }
+    .Portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets and smaller desktops */
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 10px;
+    }
+    article, .about-me-parent {
+        grid-template-columns: 1fr;
+    }
+    .my-services-parent-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-parent {
+        grid-template-columns: 1fr;
+    }
+    .contact-input {
+        width: 100%;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .my-services-parent-box,
+    .Portfolio {
+        grid-template-columns: 1fr;
+    }
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-input input,
+    .contact-input select,
+    .contact-input textarea {
+        width: 100%;
+    }
+    .award, .diamond, .color {
+        display: none;
+    }
+    .Portfolio-col img {
+        width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .hero-col h1 {
+        font-size: 24px;
+    }
+    .hero-icon-div .fa-brands {
+        font-size: 30px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .about-col ol li {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
 
 
 
