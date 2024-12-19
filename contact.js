@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             if (response.ok) {
-                alert('Message sent successfully!');
+                alert('Message sent successfully! Thank you for contacting me.');
                 contactForm.reset();
             } else {
                 const errorData = await response.json();
@@ -32,5 +32,37 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error:', error);
             alert('An error occurred. Please try again later.');
         }
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navWrapper = document.querySelector('.nav-wrapper');
+
+    menuBtn.addEventListener('click', () => {
+        navWrapper.classList.toggle('active');
+        // Change icon when menu is open
+        const icon = menuBtn.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menuBtn.contains(e.target) && !navWrapper.contains(e.target)) {
+            navWrapper.classList.remove('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            navWrapper.classList.remove('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
+        });
     });
 });

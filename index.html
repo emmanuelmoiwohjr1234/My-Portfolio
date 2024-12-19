@@ -13,7 +13,11 @@
     <section>
         <!----------------------------header------------------->
            <header>
-            <h2>Moiwoh <span>Jr.</span></h2>
+            <a href="./index.html"><h2>Moiwoh <span>Jr.</span></h2></a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-wrapper">
            <nav>
                <a href="./index.html">Home</a>
                <a href="./about.html">About Me</a>
@@ -22,7 +26,8 @@
                <a href="./gallery.html">Gallery</a>
                
             </nav>
-            <button>Download CV</button>
+            <button class="cv-btn">Download CV</button>
+            </div>
         </header>
         <!--------------------------------------Hero Section----------------------------------------->
         <section class="hero-section ">
@@ -30,7 +35,7 @@
                 <div class="hero-col">
                     <p>I'M GLAD YOU'RE HERE.</p>
                     <h1>
-                        Hi <span>👋</span>,I'm Emmanuel Moiwoh Jr.A Web <span class="auto"></span>
+                        Hi <span>👋</span>,I'm Emmanuel Moiwoh Jr.A <span class="auto"></span>
                     </h1>
                     <p>I'm passionate about creating user-friendly  designs and 
                         functional websites. With expertise in both design and
@@ -44,7 +49,7 @@
                       <a href="./picture/whatsapp contact.jfif"><i class="fa-brands fa-square-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="hero-col">
+                <div class="hero-col hero-col-2">
                     <img src="./picture/hero pic.png" width="300">
                 </div>
                 <img class="award" src="./picture/premium.gif" width="100">
@@ -66,12 +71,12 @@
                 </div>
                 <div class="about-col">
                     <h2>About <span>Me</span></h2>
-                    <p>Hello! I’m an enthusiastic web designer and developer with a passion for crafting captivating digital experiences. Here’s what sets me apart:</p>
+                    <p>Hello! I'm an enthusiastic web designer and developer with a passion for crafting captivating digital experiences. Here's what sets me apart:</p>
                     <ol>
                         <li><span><b>Design Magic:</b></span> I blend aesthetics and functionality to create visually stunning websites that leave a lasting impression.</li>
                         <li><span><b>Code Whisperer:</b></span> My love for clean, efficient code ensures seamless user interactions and lightning-fast load times.</li>
                         <li><span><b>User-Centric Approach:</b></span> I prioritize user experience, making sure every click feels intuitive and delightful.</li>
-                        <li><span><b>Collaboration Champion:</b></span> Let’s work together to turn your ideas into pixel-perfect reality!</li>
+                        <li><span><b>Collaboration Champion:</b></span> Let's work together to turn your ideas into pixel-perfect reality!</li>
                     </ol>
                     <p><span></span><b>Name:</b> Emmanuel Moiwoh Jr.</p>
                     <p><span></span><b>Birthday:</b> 19 <sup>th</sup> Dec,2024</p>
@@ -94,25 +99,24 @@
                 <div class="box-col">
                     <img src="./picture/paint-palette.gif" width="100">
                     <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam provident, accusantium eaque modi quidem quis temporibus perferendis cupiditate fugit nobis explicabo mollitia, a velit quae molestias veniam, eum facilis atque omnis.</p>
+                    <p>Transform your digital presence with captivating web designs that blend aesthetics with functionality. I specialize in creating responsive, user-centric interfaces that engage your audience and reflect your brand's unique identity. Using modern design principles and creative innovation, I ensure your website stands out in today's competitive digital landscape.</p>
                 </div>
                 <div class="box-col">
                     <img src="./picture/php.gif" width="100">
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam provident, accusantium eaque modi quidem quis temporibus perferendis cupiditate fugit nobis explicabo mollitia, a velit quae molestias veniam, eum facilis atque omnis.</p>
+                    <p>Elevate your online presence with robust, scalable web solutions. I deliver clean, efficient code that powers dynamic websites and web applications. From e-commerce platforms to custom CMS solutions, I implement the latest technologies and best practices to create secure, high-performance websites that drive results and enhance user experience.</p>
                 </div>
                 <div class="box-col">
                     <img src="./picture/phone-settings.gif" width="100">
                     <h3>Mobile Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quisquam provident, accusantium eaque modi quidem quis temporibus perferendis cupiditate fugit nobis explicabo mollitia, a velit quae molestias veniam, eum facilis atque omnis.</p>
+                    <p>Stay connected with your audience through custom mobile solutions that work seamlessly across all devices. I specialize in developing responsive mobile applications that combine intuitive navigation with powerful functionality. Whether it's PWAs or mobile-first websites, I ensure your mobile presence delivers an exceptional user experience while maintaining optimal performance.</p>
                 </div>
-
             </article>
         </section>
-        <!-------------------------My Portfolio----------------------->
+        <!-------------------------My Project----------------------->
         <section class="Portfolio-section">
    
-            <h2>Port<span>folio</span></h2>
+            <h2>Pro<span>jects</span></h2>
             <p>I work with you,Not for you</p>
             <article class="Portfolio">
                 <div class="Portfolio-col">
@@ -207,12 +211,14 @@
                 </div>
                 <div class="footer-col">
                     <h3>Let's Make Consultation With Us!</h3>
-                    <div class="footer-box">
-                        <input type="email" name="email" class="email" placeholder="Enter Your Email" required>
-                        <div>
-                          <i class="fa-regular fa-paper-plane btn"  type="submit" ></i>
+                    <form action="">
+                        <div class="footer-box">
+                            <input type="email" required name="email" class="email" placeholder="Enter Your Email" required>
+                            <button>
+                            <i class="fa-regular fa-paper-plane btn btn-email"  type="submit" ></i>
+                            </button>
                         </div>
-                    </div>
+                   </form>
                 </div>
             </article>
             <!-- <div class="custom-shape-divider-top-1715265621">
@@ -228,7 +234,7 @@
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed(".auto", {
-                strings: ["Designer", "Developer"],
+                strings: ["Web Designer", "Web Developer", "Mobile Developer"],
                 typeSpeed:150,
                 backSpeed: 50,
                 loop: true,

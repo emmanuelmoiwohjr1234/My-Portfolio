@@ -3,27 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <button><a href="./index.html">Back Home</a></button><br><br>
-    <form>
-        <fieldset>
-            <legend>CONTACT ME</legend>
-            <label for="fname">First Name:</label><br>
-            <input type="text" name="fname" id="fname"  placeholder="Enter  First Name" required><br><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email" placeholder="moiwohjr@gmail.com" required><br><br>
-            <label for="contact">Contact:</label><br>
-            <input type="number" name="contact" id="contact"  placeholder="(+231)(886-175-012)(776-578-789)" required><br><br>
-            <label for="date">Date:</label><br>
-            <input type="date" name="date" id="date"><br><br>
-            <label for="Comment">Message:</label><br>
-            <textarea name="" id="" cols="30" rows="10" required></textarea><br><br>
-            <button> Submit</button>
-        </fieldset>
-    </form><br><br>
+        <!----------------------------header------------------->
+        <header>
+            <a href="./index.html"><h2>Moiwoh <span>Jr.</span></h2></a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-wrapper">
+           <nav>
+               <a href="./index.html">Home</a>
+               <a href="./about.html">About Me</a>
+               <a href="./project.html">Project </a>
+               <a href="./contact me.html">Contact Me</a>
+               <a href="./gallery.html">Gallery</a>
+               
+            </nav>
+            <button class="cv-btn">Download CV</button>
+            </div>
+        </header>
+     <!------------------------------------Contact Me------------------------>
+     <section class="contact">
+        <article class="contact-parent">
+            <div class="contact-col">
+                <h2>Contact Me</h2>
+                <h3><span>Need help?</span> Get in touch now!</h3>
+                <div class="contact-box">
+                    <i class="fa-solid fa-phone"></i> 
+                   <div>
+                    <p>Phone</p>
+                    <p>+231772578789/886175012</p>
+                   </div> 
+                </div>
+                <div class="contact-box">
+                    <i class="fa-solid fa-envelope"></i> 
+                    <div>
+                     <p>Email</p>
+                     <p>emmanuelmmoiwohjr@gmail.com</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                <div class="contact-input">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="text" placeholder="Phone" required>
+                    <select required>
+                        <option>Package</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                    </select>
+                    <input type="date" required>
+                    <textarea name="text" id="text" cols="28" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Me Message</button>
+            </div>
+        </form>
+        </article>
+        <!-- <div class="custom-shape-divider-bottom-1715271136">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+    </section>
+     <!-------------------------------footer---------------------------------------->
+     <section class="footer">
+        <article class="footer-parent">
+            <div class="footer-col">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./project.html">Project</a></li>
+                    <li><a href="./contact me.html">Contact Me</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <address>
+                    Thinker's Village,RIA Highway,Paynesville City,Montserrado County,Liberia
+                </address>
+                <p>+231772578789/886175012</p>
+                <div class="footer-icon-div">
+                    <a href="https://www.facebook.com/profile.php?id=100079062670964"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/emmanuelmoiwohjr._?igsh=cGh2cWpoYTA0MTJk"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="./picture/whatsapp contact.jfif"><i class="fa-brands fa-square-whatsapp"></i></a>
+                  </div>
+            </div>
+            <div class="footer-col">
+                <h3>Let's Make Consultation With Us!</h3>
+                <form action="">
+                    <div class="footer-box">
+                        <input type="email" required name="email" class="email" placeholder="Enter Your Email" required>
+                        <button type="submit" class="btn">
+                        <i class="fa-regular fa-paper-plane btn btn-email"  ></i>
+                        </button>
+                    </div>
+               </form>
+            </div>
+        </article>
+        <!-- <div class="custom-shape-divider-top-1715265621">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+    </section>
 </body>
 </html>
